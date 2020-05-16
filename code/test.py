@@ -11,14 +11,16 @@ from tqdm import tqdm
 
 
 def main():
-    parser = argparse.ArgumentParser(
-        description='Test Super Resolution Models')
+    parser = argparse.ArgumentParser(description='Test Super Resolution Models')
     parser.add_argument(
         '-opt', type=str, required=True, help='Path to options JSON file.')
+    
+    # read .json file
     opt = option.parse(parser.parse_args().opt)
     opt = option.dict_to_nonedict(opt)
 
-    # initial configure
+    # initial configuration
+    # take .json file values
     scale = opt['scale']
     degrad = opt['degradation']
     network_opt = opt['networks']

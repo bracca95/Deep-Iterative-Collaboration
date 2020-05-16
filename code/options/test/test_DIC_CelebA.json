@@ -12,8 +12,8 @@
         "test_CelebA": {
             "mode": "LRHR",
             "name": "CelebA",
-            "dataroot_HR": "/home/jzy/datasets/SR_datasets/face_test/CelebA/HR",
-            "dataroot_LR": "/home/jzy/datasets/SR_datasets/face_test/CelebA/LR",
+            "dataroot_HR": "/content/Deep-Iterative-Collaboration/datasets/CelebA_test/HR",
+            "dataroot_LR": "/content/Deep-Iterative-Collaboration/datasets/CelebA_test/LR",
             "data_type": "img",
             "LR_size": 16,
             "HR_size": 128
@@ -32,7 +32,7 @@
         "num_fusion_block": 7
     },
     "solver": {
-        "pretrained_path": "../experiments/DIC_in3f48_x8_DIC_CelebA/epochs/best_ckp.pth"
+        "pretrained_path": "/content/Deep-Iterative-Collaboration/models/DIC_CelebA.pth"
     },
     "path": {
       "root": "../"
